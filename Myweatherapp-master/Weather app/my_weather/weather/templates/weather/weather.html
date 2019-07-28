@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <section class="hero is-dark">
+    <section class="hero is-primary">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">
-                    What's the weather like?
+                <h1 class="title" style="color:#202020;">
+                    Get to know the weather conditions in your city.
                 </h1>
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section" style="text-align:center;">
         <div class="container">
             <div class="columns">
                 <div class="column is-offset-4 is-4">
-                    <form method="POST">
+                    <form method="POST" style="text-align: center;">
                         {% csrf_token %}
                         <div class="field has-addons">
                             <div class="control is-expanded">
@@ -37,7 +37,7 @@
                         </div>
 
                         {% if message %}
-                            <div class="notification {{ message_class }}">{{ message }}</div>
+                        <div class="notification {{ message_class }}">{{ message }}</div>
                         {% endif %}
 
                     </form>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section" style="text-align: center;">
         <div class="container">
             <div class="columns">
                 <div class="column is-offset-4 is-4">
